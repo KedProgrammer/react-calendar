@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  appt_time: 2017-12-05 11:44:13
+  title: MyString
+
+two:
+  appt_time: 2017-12-05 11:44:13
+  title: MyString
