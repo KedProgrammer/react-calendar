@@ -28,10 +28,6 @@ export default class Appointment extends React.Component {
 	}
  }
 
-back = () => {
-	<Back />
-	
-}
  render () {
   return (
    <div className='appointment'>
@@ -41,6 +37,7 @@ back = () => {
     </Link>
     <p>{formatDate(this.state.appointment.appt_time)}</p>
     {this.state.back ? 	<Link to={'/'} ><h3>Back</h3></Link>  :  ""}
+    <Link to={`/appointments/${this.state.appointment.id}/edit`} ><h3>Edit</h3></Link> 
    </div>
   )
  }
