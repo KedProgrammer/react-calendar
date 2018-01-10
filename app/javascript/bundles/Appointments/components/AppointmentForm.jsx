@@ -65,9 +65,14 @@ validateField (fieldName, fieldValue, validations) {
 
   handleFormSubmit = (e) => {
         e.preventDefault();
+         if (this.props.match) {
     this.props.match.path === '/appointments/:id/edit' ? 
       this.updateAppointment() :
       this.addAppointment()
+
+    }else{
+       this.addAppointment()
+    }
 
   }
     
